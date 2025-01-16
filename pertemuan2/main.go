@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // Input pada Golang adalah data yang diberikan kepada program untuk diproses. 
 // Input bisa berasal dari berbagai sumber seperti keyboard, file, atau jaringan.
@@ -24,8 +26,19 @@ func test3 (name, alamat string) (hasil string) {
 	return "Hello " + name + " dengan alamat " + alamat
 }
 
+
+/* 
+	NOTE : 
+	1. Untuk function sendiri di golang digunakan kapitalisasi pada title function. jadi tidak ada public ataupun private
+	2. Misalkan kita membuat function dengan nama test() maka kita bisa memanggilnya dengan cara test() pada main function
+	yang dimana jika kapitalisasinya itu huruf kecil maka hanya bisa dipanggil di package main saja. Jika kapitalisasinya itu huruf besar
+	maka bisa dipanggil di package lain
+
+*/
 func main() {
 	greet("Rafi", "J04032313044" )
 	fmt.Println(test2("Rafi", "Jl. Kebon Jeruk"))
 	fmt.Println(test3("Rafi", "Jl. Kebon Jeruk"))
+	// Memanggil fungsi Test() dari package lain
+
 }

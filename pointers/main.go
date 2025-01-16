@@ -22,7 +22,7 @@ func main(){
 	fmt.Printf("value nya %X, satu1 : %d\n", &satu1, satu1)
 
 
-	fmt.Println("Pointers")
+	// fmt.Println("Pointers")
 
 
 	// kita bisa juga membuat pointer kosong
@@ -30,7 +30,7 @@ func main(){
 	fmt.Printf("value nya %X, kosong : %v\n", &kosong, kosong)
 
 	// Mengisi pointer kosong dengan nilai dari input
-	var input *int
-	fmt.Scan("Masukkan nilai untuk pointer kosong: ", &input)
+	// var input *int
+	// fmt.Scan("Masukkan nilai untuk pointer kosong: ", &input)
 	
 }
