@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+func Hello_Tes(){
+	fmt.Println("Hello Tes")
+}
+
 func main(){
 	fmt.Println("Conditional Syntax")
 
@@ -56,7 +60,7 @@ func main(){
 	// 	halo++
 	// }
 
-
+	// Looping dengan break dan continue
 	Looping := 0 
 	for {
 		Looping += 1
@@ -68,4 +72,9 @@ func main(){
 			break
 		}
 	}
+
+	// Defer
+	// Defer adalah sebuah keyword yang membuat function yang kita panggil menggunakan defer akan dipanggil diakhir.
+	// Biasanya digunakan untuk clean up data, close file, close database, dll.
+	defer Hello_Tes()
 }
